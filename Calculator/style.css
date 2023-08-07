@@ -1,0 +1,67 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/DIGITALDREAMFATNARROW.ttf);
+  }
+  
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;    
+    /* border: 1px solid black; */
+}
+img{
+    width: 100%;
+}
+.box1{
+    /* width: 100%; */
+    margin: 3rem 28rem;
+    padding: 20px;
+    background-color: rgba(60, 60, 60, 1);
+    border-radius: 20px;
+}
+.display{
+    text-align: center;
+    height: 8vh;
+    border-radius: 10px;
+}
+
+input{
+    width: 38.5vw;
+    padding: 5px;
+    height: 8vh;
+    font-family: myFirstFont;
+    background-color: rgba(192, 208, 191, 1);
+    text-align: right;
+    margin: 1px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+.btn{
+    margin: 25px;
+}
+.row{
+    text-align: center;
+    padding: 6px;
+    
+}
+
+.button{
+    width: 8vw;
+    height: 8vh;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+#equalto{
+    width: 16.2vw;
+    background-color: orange;
+    color: white;
+}
+
+#operators{
+    color: orange;
+}
