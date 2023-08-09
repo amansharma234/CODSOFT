@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid white; */
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+.btn {
+  width: 8rem;
+  margin-right: 3rem;
+  height: 2.2rem;
+  border: 1px solid yellow;
+}
+
+
+
+/* ------------------------------------------------- Header Section Starts ------------------------------------------------- */
+nav{
+    /* background: #0082e6; */
+    height: 80px;
+    width: 100%;
+  }
+  .nav-icon{
+    display: flex;
+  }
+  .d1 {
+    width: 8rem;
+    height: 5rem;
+}
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      /* background: #2c3e50; */
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: yellow;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
+
+/* ------------------------------------------------- Header Section ends ------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- Hero Section Starts ------------------------------------------------- */
+.hero{
+  margin: 0 3rem 0 2rem;
+}
+
+.line-1{
+  position: relative;
+  top: 50%;  
+  border-right: 1px solid rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+
+.intro-msg{
+  width: 35%;
+  margin-top:5rem ;
+  font-size: 5rem;
+  position: absolute;
+}
+
+.intro{
+  font-size: 7rem;
+  color: yellow;
+  font-family: 'Lovers Quarrel', cursive;  
+}
+.headline1{
+  margin-top: 10rem;
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+.animate__animated{
+  font-size: 13rem;
+  background-color: white;
+  background-clip: text;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0.5rem;
+  -webkit-background-clip: text;
+  color: black;
+  text-align: center;
+}
+.hero div{
+  background-color: transparent;
+}
+.headline2{
+  margin-top: 23rem;
+  position: absolute;
+  z-index: 1;
+}
+.hero-img{
+  position: absolute;
+  z-index: 0;
+  margin-left: 46.5rem;
+  
+}
+#end{
+  margin-left: 12rem;
+}
+ 
+.man-waving{
+  height: 80vh;
+
+}
+
+
+/* ------------------------------------------------- Hero Section ends ------------------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------------------------- About Section Starts ------------------------------------------------- */
+.about{
+  margin-top: 50rem;
+  margin-left: 3rem;
+}
+.introduction{
+  display: flex;
+  align-items: center;
+}
+.profile-pic img{
+  height: 40vh;
+  border-radius: 50%;
+background: linear-gradient(145deg, #969696, #7e7e7e);
+}
+
+.info{
+  margin-left: 5rem;
+}
+.main-skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+.card{
+  margin: 1rem 2rem;
+  width: 190px;
+  height: 16rem;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 0.001rem solid white;
+}
+
+.card img{
+  margin-top: 2.5rem;
+  height: 5rem;
+}
+.card i{
+  margin-top: 2.5rem;
+  font-size: 65px;
+  margin-bottom: 2.5rem;
+}
+
+/* ------------------------------------------------- About Section ends ------------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------- Skills Section Starts ------------------------------------------------- */
+.skills{
+  margin-left: 3rem;
+}
+.skill-sec{
+  display: flex;
+}
+.tagline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  width: 50vw;
+}
+.skill-img img{
+  height: 80vh;
+}
+
+.technical-skills{
+  margin-top: 5rem;
+}
+.technical-skills h1{
+  font-size: 90px;
+}
+.technical-skills img{
+  height: 12rem;
+}
+
+
+
+/* ------------------------------------------------- Skills Section ends ------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------- Projects Section Starts ------------------------------------------------- */
+
+.projects{
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
+.tag{
+  width: 30%;
+}
+
+.tag p{
+  font-size: 50px;
+}
+.project-sec{
+  margin-top: 6rem;
+}
+.project-sec h1{
+  font-size: 90px;
+}
+
+.project-card{
+  margin-top: 3rem;
+  display: flex;
+}
+.project-card img{
+  height: 40vh;
+}
+.project-info{
+  margin-left: 5rem;
+  padding-top: 5rem;
+}
+
+.project-info h1{
+  font-size: 50px;
+}
+/* ------------------------------------------------- Projects Section ends ------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- Contact Section Starts ------------------------------------------------- */
+
+.contact{
+  margin-left: 3rem;
+  margin-top: 5rem;
+}
+
+.contact-sec{
+  display: flex;
+  margin-left: 5rem;
+}
+.contact-sec img{
+  height: 80vh;
+}
+.form{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 30vw;
+  margin-left: 5rem;
+}
+
+.box1{
+  width: 25vw;
+  height: 5vh;
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  border: none;
+}
+
+.box2{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  border: none;
+  margin: 1rem 0;
+  width: 25vw;
+  height: 25vh;
+}
+/* ------------------------------------------------- Contact Section ends ------------------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------------------------- Footer Section Starts ------------------------------------------------- */
+
+footer{
+  margin-left: 3rem;
+  margin-top: 5rem;  
+}
+.list-one{
+  display: flex;
+}
+.list-one i{
+  margin-left: 2rem;
+}
+.footer-box{
+  font-size: 30px;
+}
+/* ------------------------------------------------- Footer Section ends ------------------------------------------------- */
+    
